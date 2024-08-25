@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Artisan1 from './pages/Artisan-1';
 import Artisan2 from './pages/Artisan-2';
 import Artisan3 from './pages/Artisan-3';
+import NotFound from './pages/NotFound';
 import Chercher from './img/chercher.png';
 import Logo from './img/Logo-1.png';
 
@@ -61,6 +62,8 @@ function App() {
             <Route path='/artisan-1' element={<Artisan1 />}></Route>
             <Route path='/artisan-2' element={<Artisan2 />}></Route>
             <Route path='/artisan-3' element={<Artisan3 />}></Route>
+            <Route path='/*' element={<Navigate to="/erreur-404" />}></Route>
+            <Route path='/erreur-404' element={<NotFound />}></Route>
           </Routes>
 
         </main>
