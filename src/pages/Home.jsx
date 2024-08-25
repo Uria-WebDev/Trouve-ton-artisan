@@ -35,7 +35,7 @@ const Home = () => {
                 </h2>
 
                 <div className="row gap-4 margin-bottom-5-desktop margin-top-2">
-                    <Link to='/artisan-1' className="col-sm-12 col-md background-lblue border-radius-5 border text-white padding-top-2 padding-bottom-1 decoration-none background-dblue-hov">
+                    <Link to='/artisan-1' className="col-sm-12 col-md-5 col-lg background-lblue border-radius-5 border text-white padding-top-2 padding-bottom-1 decoration-none background-dblue-hov">
                         <h3>John Doe - Menuisier</h3>
                         <div className="text-right">
                             <span className="fa fa-star checked"></span>
@@ -47,7 +47,7 @@ const Home = () => {
                         <p className="text-right">273 Bd Carnot, 72000 Le Mans</p>
                     </Link>
 
-                    <Link to='/artisan-2' className="col-sm-12 col-md background-lblue border-radius-5 border text-white padding-top-2 padding-bottom-1 decoration-none background-dblue-hov">
+                    <Link to='/artisan-2' className="col-sm-12 col-md-5 col-lg background-lblue border-radius-5 border text-white padding-top-2 padding-bottom-1 decoration-none background-dblue-hov">
                         <h3>Richard Dupond - Peintre</h3>
                         <div className="text-right">
                             <span className="fa fa-star checked"></span>
@@ -59,7 +59,7 @@ const Home = () => {
                         <p className="text-right">52 Av. de Stalingrad, 21000 Dijon</p>
                     </Link>
 
-                    <Link to='/artisan-3' className="col-sm-12 col-md background-lblue border-radius-5 border text-white margin-bottom-5-mobile padding-top-2 padding-bottom-1 decoration-none background-dblue-hov">
+                    <Link to='/artisan-3' className="col-sm-12 col-md-5 col-lg background-lblue border-radius-5 border text-white margin-bottom-5-mobile padding-top-2 padding-bottom-1 decoration-none background-dblue-hov">
                         <h3>Phi&Co - Batiment</h3>
                         <div className="text-right">
                             <span className="fa fa-star checked"></span>

@@ -43,12 +43,12 @@
   color: #ffffff;
 }
 
-.checked {
-  color: #82B864;
+.text-red {
+  color: #CD2C2E;
 }
 
-.text-right {
-  text-align: end;
+.checked {
+  color: #82B864;
 }
 
 .sticky {
@@ -60,8 +60,16 @@
   width: 15%;
 }
 
+.width-60 {
+  width: 50%;
+}
+
 .width-100 {
   width: 100%;
+}
+
+.margin-top-1 {
+  margin-top: 1%;
 }
 
 .margin-top-2 {
@@ -126,6 +134,10 @@
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: end;
 }
 
 .decoration-none {
