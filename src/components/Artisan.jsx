@@ -1,28 +1,37 @@
+import { useLocation } from "react-router-dom";
+import { Rating } from "react-simple-star-rating";
+import data from '../datas/datas.json';
 import Profil from "../img/profil.png";
 
-const Artisan2 = () => {
+const Artisan = () => {
+    const { state } = useLocation();
+    const searchIndex = state.setIndex;
+
+    const filteredData = data.filter(item => {
+        return Object.keys(item).some(key => item[key].toString().toLowerCase().includes(searchIndex.toLowerCase()));
+      });
+
     return(
         <div className="container">
             <div className="row gap-4 margin-bottom-5-desktop margin-top-2">
 
-                <div className="col-sm-12 col-md background-lblue border-radius-5 border text-white padding-top-1">
+            {filteredData.map((item, index) => (
+
+                <div key={index} className="col-sm-12 col-md background-lblue border-radius-5 border text-white padding-top-1">
                     <div className="row">
                         <div className="col"><img src={Profil} alt="Photo de profil" className="width-60 background-white" /></div>
                         <div className="col">
-                            <h3 className="text-right">Richard Dupond - Peintre</h3>
+                            <h3 className="text-right">{item.name}</h3>
                         </div>
                     </div>
-                    <div className="text-right margin-bottom-2">
-                        <span className="fa fa-star checked"></span>
-                        <span className="fa fa-star checked"></span>
-                        <span className="fa fa-star checked"></span>
-                        <span className="fa fa-star"></span>
-                        <span className="fa fa-star"></span>
+                    <div className="text-right">
+                        <Rating initialValue={item.note} readonly="true" size="25" fillColor="#82B864" />
                     </div>
-                    <p className="text-right">52 Av. de Stalingrad, 21000 Dijon</p>
+                    <p className="text-right">{item.location}</p>
                 </div>
+            ))}
 
-                <div className="col-sm-12 col-md">
+                <div className="col-sm-12 col-md margin-bottom-2">
                     <form>
                         <input type="text" placeholder="Nom" className="col-12 margin-bottom-2" />
                         <input type="text" placeholder="Prénom" className="col-12 margin-bottom-2" />
@@ -39,4 +48,4 @@ const Artisan2 = () => {
     )
 }
 
-export default Artisan2;
+export default Artisan;

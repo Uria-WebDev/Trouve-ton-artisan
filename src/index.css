@@ -47,10 +47,6 @@
   color: #CD2C2E;
 }
 
-.checked {
-  color: #82B864;
-}
-
 .sticky {
   position: sticky;
   top: 0px;
@@ -146,4 +142,8 @@
 
 .underline, .underline-hov:hover {
   text-decoration: underline;
+}
+
+.z-index-2 {
+  z-index: 2;
 }
