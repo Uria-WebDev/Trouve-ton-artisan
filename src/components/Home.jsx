@@ -3,7 +3,7 @@ import ArtisanCard from "./ArtisanCard.jsx";
 const Home = () => {
     return(
         // Tutoriel //
-        <div>
+        <div className="margin-bottom-2">
             <div className="container">
                 <h2 className="underline padding-top-3">
                     Comment trouver mon artisan ?

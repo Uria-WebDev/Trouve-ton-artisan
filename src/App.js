@@ -27,6 +27,7 @@ function App() {
               </div>
               <div className="offcanvas-body">
 
+              {/* Récupération de la valeur de la barre de recherche */}
               <form className="d-flex mt-3 border-top" role="search">
                 <input className="form-control me-2 margin-top-2 margin-bottom-2" type="search" placeholder="Rechercher" aria-label="Search"
                 value={searchTerm} onChange={e => setSearchTerm(e.target.value)} />
